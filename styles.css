@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* Color */
+
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+
+    /* Font */
+
+    --Inter: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: var(--Inter);
+    background-color: var(--Grey-900);
+}
+
+.card-contianer {
+    min-width: 327px;
+    height: 579px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    margin: 24px;
+    background-color: var(--Grey-800);
+    border-radius: 12px;
+}
+
+/* Header */
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.avatar {
+    width: 88px;
+    border-radius: 100%;
+}
+
+.header {
+    text-align: center;
+}
+
+.header__name {
+    font-size: 24px;
+    padding-bottom: 4px;
+    color: var(--White);
+    font-weight: 600;
+    letter-spacing: .011rem;
+}
+
+.header__lacation {
+    font-size: 14px;
+    padding-top: 4px;
+    color: var(--Green);
+    font-weight: 600;
+}
+
+.section__biography {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--White);
+}
+
+/* Links */
+
+.section--link {
+    gap: 16px;
+    list-style: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.section__buttom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 279px;
+    height: 45px;
+    border-radius: 8px;
+    background-color: var(--Grey-700);
+    transition: .5s;
+}
+
+.section__buttom:hover {
+    background-color: var(--Green);
+    color: var(--Grey-900);
+    transition: 1s;
+}
+
+@media (min-width: 472px) {
+    
+    .card-contianer {
+        width: 456px;
+    }
+
+    .section__buttom {
+        width: 376px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    
+    .card-contianer {
+        width: 384px;
+        height: 611px;
+    }
+
+    .section__buttom {
+        width: 304px;
+    }
+
+}
